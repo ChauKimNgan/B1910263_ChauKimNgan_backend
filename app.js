@@ -20,7 +20,6 @@ app.use((err, req, res, next) => {
         message: err.message || "Internal Server Error",
     });
 });
-
 app.get("/", (req, res) => {
     // Middleware xử lý lỗi tập trung.
     // Trong các đoạn code xử lý ở các route, gọi next(error)
